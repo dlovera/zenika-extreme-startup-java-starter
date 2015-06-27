@@ -1,0 +1,34 @@
+# Binaires
+target
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE
+.idea
+*.iml
+.classpath
+.project
+.settings
+.springBeans
+nb*.xml
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+release.properties
+
+# Logs
+logs
+*.log
+hs_err_pid*
+
+# Temporaire
+*.tmp
+.DS_Store
+
+
+
+

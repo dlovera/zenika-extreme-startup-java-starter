@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 public class ExtremeStartupStarter extends HttpServlet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ExtremeStartupStarter.class);
-    public static final int SERVER_PORT = 8080;
+    private static final int SERVER_PORT = 8080;
 
     /**
      * Main entry point

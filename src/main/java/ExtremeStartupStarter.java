@@ -30,15 +30,8 @@ public class ExtremeStartupStarter extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String request = req.getParameter("q");
-        if (request == null) {
-            // no request
-            return;
-        }
         LOGGER.info("request: {}", request);
-        String answer = answer(request);
-        if (answer != null) {
-            resp.getWriter().write(answer);
-        }
+        resp.getWriter().write(answer(request));
     }
 
     private String answer(String req) {
@@ -46,7 +39,7 @@ public class ExtremeStartupStarter extends HttpServlet {
         if (additionMatcher.matches()) {
             return "<YOUR NAME>";
         }
-        LOGGER.info("Unrecognized question " + req);
-        return null;
+        LOGGER.error("Unrecognized question");
+        return "";
     }
 }

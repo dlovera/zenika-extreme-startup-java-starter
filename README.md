@@ -1,6 +1,6 @@
 ### zenika-extreme-startup-java-starter
 
-This is a starter kit for the extreme startup challenge using Scalatra.
+This is a starter kit for the extreme startup challenge using javax.servlet + jetty.
 
 1. Import project using Maven
 
